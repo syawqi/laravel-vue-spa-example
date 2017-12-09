@@ -10,6 +10,16 @@ let routes=[
         path : '/about',
         component : require('./components/About')
     },
+    {
+        path : '/createUser',
+        component : require('./components/createUser'),
+        name : '/createUser'
+    },
+    {
+        path : '/editUser/:id',
+        component : require('./components/editUser'),
+        name : '/editUser'
+    },
 ];
 
 export default new VueRouter({
